@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ datatable({
+        'edit_route' : 'edit_product',
+        'delete_route' : 'delete_product',
+        'js' : {
+            'sAjaxSource' : path('grid')
+        }
+    }) }}
+{% endblock %}
+
+{% block stylesheets %}
+
+{% endblock %}
